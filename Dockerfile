@@ -7,7 +7,7 @@ COPY package*.json .
 
 RUN npm install
 
-COPY public/
+COPY public public/
 
 EXPOSE 8080
 
