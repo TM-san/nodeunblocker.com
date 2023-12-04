@@ -10,7 +10,7 @@ RUN npm install
 COPY public public/
 COPY app.js app.js
 COPY app.json app.json
-COPY newrelic.json
+COPY newrelic.json newrelic.json
 EXPOSE 8080
 
 CMD ["npm","start"]
