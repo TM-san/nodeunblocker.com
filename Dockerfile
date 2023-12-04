@@ -8,7 +8,9 @@ COPY package*.json .
 RUN npm install
 
 COPY public public/
+COPY app.js app.js
 
 EXPOSE 8080
 
-CMD ["npm", "start"]
+ENTRYPOINT ["node"]
+CMD ["app.js"]
