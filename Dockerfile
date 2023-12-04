@@ -9,8 +9,8 @@ RUN npm install
 
 COPY public public/
 COPY app.js app.js
+COPY app.json app.json
 
 EXPOSE 8080
 
-ENTRYPOINT ["node"]
-CMD ["app.js"]
+CMD ["npm","start"]
